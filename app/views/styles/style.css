@@ -1,0 +1,247 @@
+.blue {
+	color: white;
+	background-color: #0033ff !important;
+}
+
+.blueUser {
+	color: #0033ff !important;
+
+}
+
+.red {
+	color: red;
+}
+
+.editBody {
+	width: 900px;
+	height: 400px;
+	margin: 0 auto;
+	max-width: 900px;
+	min-width: 900px;
+	max-height: 400px;
+	min-height: 400px;
+	display: inline-block;
+}
+
+.editTitle {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.editTitleWrap {
+	margin: 20px auto 20px auto;
+	width: 900px;
+	height: 20px;
+	color: red;
+}
+
+.newComment {
+	width: 900px;
+	height: 230px;
+}
+
+.editBodyWrap {
+	margin: 0 auto 10px auto;
+	width: 900px;
+	height: 450px;
+
+	max-width: 900px;
+	max-height: 450px;
+	min-width: 900px;
+	min-height: 450px;
+
+
+}
+
+.logout-button {
+	float: right;
+	background-color: red;
+	height: 40px;
+	width: 100px;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: white;
+
+
+}
+
+.logout-button:hover {
+	border: solid black 4px;
+	cursor: pointer;
+}
+
+.regular-button {
+	height: 30px;
+	width: 80px;
+}
+
+.regular-button:hover{
+	border: solid #2aff00 2px;
+	cursor: pointer;
+}
+
+.postsWrap ul{
+	list-style-type: none;
+	padding: 0px;
+	/*background-color: */
+	margin: 0 auto;
+
+}
+
+.postsWrap {
+	background-color: white;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.appImg{
+	height: 70px;
+	width: 70px;
+}
+
+.post  {
+	list-style-type: none;
+	padding: 10px 5px;
+
+	margin: 10px 5px;
+	background-color: white;
+	display: block;
+	text-align: center;
+	clear: both;
+	font-size: 20px;
+	font-weight: 800;
+	font-family: sans-serif;
+	border-radius: 5px;
+	border: solid 3px black;
+}
+
+.post:hover{
+	/*display: inline-block*/;
+	cursor: pointer;
+	background-color: #2aff00 ;
+	color: white;
+	border-color: #2aff00;
+}
+
+.id{
+	float: left; background-color: inherit; padding: 5px; width: 90px; 
+
+}
+
+
+.post:hover > .id{
+	color: red;
+	cursor: pointer;
+}
+
+.post:hover > .title{
+	color: orange;
+}
+
+.post:hover > .username{
+	color: yellow;
+}
+
+.pageTitle {
+font-size: 30px;
+color: #2aff00;
+font-family: sans-serif;
+text-transform: uppercase;
+}
+
+.greeting .hello {
+	color: orange;
+	font-family: sans-serif;
+	letter-spacing: 3px;
+}
+
+.greeting .username {
+	color: #0033ff;
+	font-family: sans-serif;
+	font-size: 42px;
+
+}
+
+.postUsername {
+	color: orange !important;
+}
+
+.comment {
+	list-style-type: none;
+	padding: 5px;
+	background-color: #ccffff;
+	border-radius: 10px;
+	font-size: 20px;
+	margin: 5px 0px;
+}
+
+.body {
+	color: black;
+	font-weight: 1000;
+	font-weight: bold;
+	width: 75%;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: sans-serif;
+	font-weight: 20px;
+	line-height: 150%;
+}
+
+.commentSection{
+	width: 90%
+}
+
+.commentId {
+	width: 5%;
+	color: red;
+}
+
+.commentBody{
+	width: 90%;
+}
+
+.adminComment{
+	width: 85%;
+	/*background-color: red;*/
+	padding: 5px;
+	display: inline-block;
+}
+
+.adminDelete{
+	width: 10%;
+	float: right;
+	margin: 0 auto;
+	
+}
+
+.adminDeleteButton:hover {
+	cursor: pointer;
+	border: solid 2px red;
+
+}
+
+button.hover{
+	cursor: pointer;
+}
+
+
+.commentWrapper{
+	margin: 0 auto;
+}
+
+.magic-button{
+	border-bottom: solid #2aff00 3px;
+	border-left: solid blue 3px;
+	border-right: solid yellow 3px;
+	border-top: solid red 3px;
+}
+
+.magic-button:hover{
+	border-top: solid #2aff00 3px;
+	border-bottom: solid blue 3px;
+	border-left: solid yellow 3px;
+	border-right: solid red 3px;
+	cursor: pointer;
+}

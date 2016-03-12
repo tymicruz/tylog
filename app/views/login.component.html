@@ -1,0 +1,31 @@
+	<img class="appImg" [src]="image" alt="Description" />
+	<br>
+
+<div *ngIf="!newUser">
+	<label>username: </label>
+	<input [(ngModel)]="username" placeholder="admin">
+	<label>password: </label>
+	<input [(ngModel)]="password" type="password" placeholder="one">
+	<button (click)="login()">login</button>
+	<button (click)="loginToggle()">new user</button>
+	<button *ngIf="!newUser" (click)="showUsers()" class="magic-button">{{showUsersText}}</button>
+	
+</div>
+
+<ul *ngIf="secret && !newUser">
+	<li *ngFor="#user of users">{{user._id}}::{{user.password}}</li>
+</ul>
+
+<div *ngIf="newUser">
+	<label>username: </label>
+	<input [(ngModel)]="username" placeholder=""><br><br>
+	<label>password: </label>
+	<input [(ngModel)]="password" type="password" placeholder="">
+	<label>repeat password: </label>
+	<input [(ngModel)]="repeatedPassword" type="password" placeholder=""><br><br>
+
+	<button (click)="signUp()">sign up</button>
+	<button (click)="loginToggle()">sign in page</button>
+</div>
+
+<p *ngIf="error" [ngClass]="{red: errorFlash}">{{error}}</p>

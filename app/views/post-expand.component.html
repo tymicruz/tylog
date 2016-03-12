@@ -1,0 +1,78 @@
+	<img class="appImg" [src]="image" alt="Description" />
+	<button class="logout-button" (click)="logout()">logout</button>
+	<br>
+<div *ngIf="post">
+
+	<button class="regular-button" *ngIf="admin" (click)="toggleEditMode()">{{editButtonText}}</button>
+	<button class="regular-button" *ngIf="editMode" (click)="save()">save</button>
+	
+	<button class="regular-button" *ngIf="editMode" (click)="deletePost(post._id)">DELETE</button>
+	<button class="regular-button" (click)="gotoPosts()">Back</button>
+
+	<h1 *ngIf="!editMode" class="pageTitle" [ngClass]="{blueUser: post.user == user}">{{ post.title }} <span style="color: black;">by</span> <span class="postUsername">{{post.user}}</span></h1>
+
+	<div *ngIf="editMode" class="editTitleWrap">
+		
+		<label>Title:</label>
+	<input [(ngModel)]="newTitle" class="editTitle" placeholder="{{titlePlaceholder}}">
+	</div>
+
+
+<!-- 	<div>
+		<label>id: </label>{{post._id}}
+	</div> -->
+
+	<div>
+
+		<div class="body" *ngIf="!editMode">
+		
+			{{post.body}}
+		</div>
+
+
+		<div *ngIf="editMode"  class="editBodyWrap">
+			<label style="color: red;">Body:</label>
+			<br>
+			<textarea [(ngModel)]="newBody" class="editBody" placeholder="{{bodyPlaceholder}}"></textarea>
+		</div>
+		
+
+		
+			<h2>Comments:</h2>
+			<div class="commentSection">
+		
+			<ul style="padding: 0px;">
+				<div class="commentWrapper">
+				<li *ngFor="#comment of comments" class="comment" style="padding: 10px 0;">
+
+					<div [ngClass]="{adminComment : admin}" style="padding: 10px 0;">
+						<label class="commentId">id: {{comment._id}}</label> 
+
+						<div class="commentBody">{{comment.body}}</div>
+					</div> 
+					<div *ngIf="admin" class="adminDelete">
+						<button (click)="deleteComment(comment._id)" class="adminDeleteButton" style="color: red;">delete</button>
+					</div>
+					
+				</li>
+				</div>	
+			</ul>
+
+		</div>
+
+		    
+
+	</div>
+
+	<h3>Add Comment:</h3>
+
+	<textarea class="newComment" *ngIf="newcomment" [(ngModel)]="newcomment.body" placeholder="{{commentPlaceholder}}">
+
+	</textarea>
+
+	<br>
+	<button class="regular-button" (click)="postComment()">Comment</button>
+
+	<button class="regular-button" (click)="goBack()">Back</button>
+
+</div>

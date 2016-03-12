@@ -1,0 +1,31 @@
+<img class="appImg" [src]="image" alt="Description" />
+<button class="logout-button" (click)="logout()">logout</button>
+<br>
+
+
+<div>
+
+	<button class="regular-button"  (click)="gotoPosts()">cancel</button>
+	<button class="regular-button"  (click)="post()">post</button>
+
+	<h1 class="pageTitle">{{title}}</h1>
+
+
+
+	<div *ngIf="true" class="editTitleWrap">
+		<label>Title:</label>
+		<input [(ngModel)]="newPost.title" class="editTitle" placeholder="{{titlePlaceholder}}">
+	</div>
+
+
+
+		<div *ngIf="true"  class="editBodyWrap">
+			<label style="color: red;">Body:</label>
+			<textarea style="margin-top: 15px;" [(ngModel)]="newPost.body" class="editBody" placeholder="{{bodyPlaceholder}}"></textarea>
+		</div>
+
+
+
+	<button class="regular-button" (click)="goBack()">Back</button>
+
+</div>
