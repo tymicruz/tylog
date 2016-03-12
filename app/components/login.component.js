@@ -135,10 +135,10 @@ System.register(['angular2/core', 'app/services/tylog.service', 'angular2/router
                         directives: [],
                         providers: []
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router, (typeof (_a = typeof tylog_service_1.TylogService !== 'undefined' && tylog_service_1.TylogService) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof tylog_service_1.TylogService !== 'undefined' && tylog_service_1.TylogService) === 'function' && _b) || Object])
                 ], LoginComponent);
                 return LoginComponent;
-                var _a;
+                var _a, _b;
             }());
             exports_1("LoginComponent", LoginComponent);
         }

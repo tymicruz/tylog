@@ -71,10 +71,10 @@ System.register(['angular2/core', 'app/services/tylog.service', 'angular2/router
                         directives: [],
                         providers: []
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router, router_2.RouteParams, (typeof (_a = typeof tylog_service_1.TylogService !== 'undefined' && tylog_service_1.TylogService) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_2.RouteParams !== 'undefined' && router_2.RouteParams) === 'function' && _b) || Object, (typeof (_c = typeof tylog_service_1.TylogService !== 'undefined' && tylog_service_1.TylogService) === 'function' && _c) || Object])
                 ], PostsComponent);
                 return PostsComponent;
-                var _a;
+                var _a, _b, _c;
             }());
             exports_1("PostsComponent", PostsComponent);
         }
