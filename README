@@ -1,0 +1,15 @@
+This just needs node.js with node package manager (npm) to run
+1)cd in project directory (@ level of index.html)
+2)run command “npm install” (may take a little while)
+run command this command in terminal “npm start”
+3)make sure localhost:3000 is open for use
+4)a browser window will open and display the app
+
+
+NOTES:
+-I didn't use a real data base (mock data) so refreshing the app will remove all data updates (users/posts/comments) that aren’t mock data.
+
+-you can switch between users and retain data, but if you refresh the page, all updates will be lost
+
+-I have preloaded 3 users (one admin), 10 posts and 50 comments.
+This is the base for each time the app is run.
